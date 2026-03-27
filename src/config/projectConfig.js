@@ -1,4 +1,4 @@
-export const projectConfig = {
+﻿export const projectConfig = {
   seo: {
     title: "Golf Los Incas | Proyecto Inmobiliario Premium en Surco",
     description:
@@ -90,6 +90,7 @@ export const projectConfig = {
         description:
           "Ambiente social de descanso y bienestar, ideal para disfrutar durante todo el año.",
         finish: "Porcelanato antideslizante 0.60 x 1.20 m",
+        image: "/images/piscina-techada.png",
         visual: "pool"
       },
       {
@@ -98,6 +99,7 @@ export const projectConfig = {
         description:
           "Espacio preparado para entrenamiento funcional y rutinas de alto rendimiento.",
         finish: "Caucho sintético de 6 mm",
+        image: "/images/gimnasio.png",
         visual: "gym"
       },
       {
@@ -106,6 +108,7 @@ export const projectConfig = {
         description:
           "Área productiva para trabajar, reunirse o estudiar con comodidad y estilo.",
         finish: "Madera estructurada",
+        image: "/images/coworking.png",
         visual: "coworking"
       },
       {
@@ -288,7 +291,7 @@ export const projectConfig = {
         area: "Zona de piscina techada",
         detail:
           "Acabado de alto desempeño con textura de seguridad y lectura visual elegante para ambientes húmedos.",
-        image: "/images/finishes/porcelanato-60x120.svg"
+        image: "/images/piscina-techada.png"
       },
       {
         id: "caucho-gimnasio",
@@ -296,7 +299,7 @@ export const projectConfig = {
         area: "Gimnasio",
         detail:
           "Superficie técnica para absorción de impacto, confort de uso y mejor rendimiento en entrenamientos.",
-        image: "/images/finishes/caucho-sintetico-6mm.svg"
+        image: "/images/gimnasio.png"
       },
       {
         id: "madera-coworking",
@@ -304,7 +307,7 @@ export const projectConfig = {
         area: "Coworking",
         detail:
           "Acabado cálido y sofisticado que eleva la percepción espacial y aporta una atmósfera profesional.",
-        image: "/images/finishes/madera-estructurada.svg"
+        image: "/images/coworking.png"
       },
       {
         id: "piedra-exteriores",
@@ -312,7 +315,7 @@ export const projectConfig = {
         area: "Ingreso principal, alameda central, circulaciones, terrazas y plaza aérea",
         detail:
           "Lenguaje material continuo para exteriores, con presencia arquitectónica y alta resistencia al uso.",
-        image: "/images/finishes/piedra-texturada-20x120.svg"
+        image: "/images/alameda-central-day-3.jpg"
       }
     ]
   },
@@ -361,7 +364,9 @@ export const projectConfig = {
         bedrooms: "1 dormitorio",
         bathrooms: "1 baño",
         description: "Layout eficiente para primeras compras e inversion de renta.",
-        blueprint: "alpha"
+        
+        blueprint: "alpha",
+        image: "/images/tipologia1.png"
       },
       {
         code: "Tipología A2",
@@ -369,7 +374,8 @@ export const projectConfig = {
         bedrooms: "1 dormitorio + estudio",
         bathrooms: "1 baño",
         description: "Configuración flexible para home office y estilo de vida urbano.",
-        blueprint: "beta"
+        blueprint: "beta",
+        image: "/images/tipologia2.png"
       },
       {
         code: "Tipología B1",
@@ -377,7 +383,8 @@ export const projectConfig = {
         bedrooms: "2 dormitorios",
         bathrooms: "2 baños",
         description: "Distribución balanceada para parejas y familias pequeñas.",
-        blueprint: "gamma"
+        blueprint: "gamma",
+        image: "/images/tipologia1.png"
       },
       {
         code: "Tipología B2",
@@ -385,7 +392,8 @@ export const projectConfig = {
         bedrooms: "2 dormitorios",
         bathrooms: "2 baños",
         description: "Planta moderna con excelente aprovechamiento de area social.",
-        blueprint: "delta"
+        blueprint: "delta",
+        image: "/images/tipologia2.png"
       },
       {
         code: "Tipología B3",
@@ -393,7 +401,8 @@ export const projectConfig = {
         bedrooms: "2 dormitorios + estar",
         bathrooms: "2 baños",
         description: "Ambientes versátiles para dinámicas familiares contemporáneas.",
-        blueprint: "epsilon"
+        blueprint: "epsilon",
+        image: "/images/tipologia1.png"
       },
       {
         code: "Tipología C1",
@@ -401,7 +410,8 @@ export const projectConfig = {
         bedrooms: "3 dormitorios",
         bathrooms: "2 baños",
         description: "Unidad familiar con dormitorios integrados y flujo funcional.",
-        blueprint: "alpha"
+        blueprint: "alpha",
+        image: "/images/tipologia2.png"
       },
       {
         code: "Tipología C2",
@@ -409,7 +419,8 @@ export const projectConfig = {
         bedrooms: "3 dormitorios",
         bathrooms: "2 baños",
         description: "Espacios sociales amplios con perfil ideal para vivienda principal.",
-        blueprint: "beta"
+        blueprint: "beta",
+        image: "/images/tipologia1.png"
       },
       {
         code: "Tipología C3",
@@ -417,7 +428,8 @@ export const projectConfig = {
         bedrooms: "3 dormitorios",
         bathrooms: "2 baños",
         description: "Composición equilibrada con buena separación de zonas privadas.",
-        blueprint: "gamma"
+        blueprint: "gamma",
+        image: "/images/tipologia2.png"
       },
       {
         code: "Tipología D1",
@@ -425,7 +437,8 @@ export const projectConfig = {
         bedrooms: "3 dormitorios + estudio",
         bathrooms: "3 baños",
         description: "Formato premium para familias que valoran amplitud y flexibilidad.",
-        blueprint: "delta"
+        blueprint: "delta",
+        image: "/images/tipologia1.png"
       },
       {
         code: "Tipología D2",
@@ -433,7 +446,8 @@ export const projectConfig = {
         bedrooms: "3 dormitorios + estar",
         bathrooms: "3 baños",
         description: "Planta de alto confort para residencia permanente.",
-        blueprint: "epsilon"
+        blueprint: "epsilon",
+        image: "/images/tipologia2.png"
       },
       {
         code: "Tipología E1",
@@ -441,7 +455,8 @@ export const projectConfig = {
         bedrooms: "3 dormitorios + servicio",
         bathrooms: "3 baños",
         description: "Propuesta orientada a familias que priorizan funcionalidad superior.",
-        blueprint: "alpha"
+        blueprint: "alpha",
+        image: "/images/tipologia1.png"
       },
       {
         code: "Tipología E2",
@@ -449,7 +464,8 @@ export const projectConfig = {
         bedrooms: "4 dormitorios",
         bathrooms: "3 baños",
         description: "Unidad amplia para grupos familiares de mayor tamaño.",
-        blueprint: "beta"
+        blueprint: "beta",
+        image: "/images/tipologia2.png"
       },
       {
         code: "Tipología F1",
@@ -457,7 +473,8 @@ export const projectConfig = {
         bedrooms: "4 dormitorios + estar",
         bathrooms: "3 baños",
         description: "Tipologia de alta demanda para vivir con comodidad premium.",
-        blueprint: "gamma"
+        blueprint: "gamma",
+        image: "/images/tipologia1.png"
       },
       {
         code: "Tipología F2",
@@ -465,7 +482,8 @@ export const projectConfig = {
         bedrooms: "4 dormitorios + estudio",
         bathrooms: "4 baños",
         description: "Espacios de gran formato para familias consolidadas.",
-        blueprint: "delta"
+        blueprint: "delta",
+        image: "/images/tipologia2.png"
       },
       {
         code: "Tipología G1",
@@ -473,7 +491,8 @@ export const projectConfig = {
         bedrooms: "4 dormitorios + sala familiar",
         bathrooms: "4 baños",
         description: "Unidad insignia para quienes buscan amplitud y valor patrimonial.",
-        blueprint: "epsilon"
+        blueprint: "epsilon",
+        image: "/images/tipologia1.png"
       }
     ]
   },
@@ -582,3 +601,5 @@ export const contactActions = {
     return buildWhatsappUrl(projectConfig.contact.whatsappNumber, message);
   }
 };
+
+

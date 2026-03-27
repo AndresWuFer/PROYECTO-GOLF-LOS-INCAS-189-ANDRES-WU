@@ -19,7 +19,17 @@ function UnitTypesSection() {
 
             return (
               <article key={unit.code} className="unit-types__card reveal-up">
-                <BlueprintPlaceholder label={unit.code} variant={unit.blueprint} />
+                {unit.image ? (
+                  <img
+                    className="unit-types__plan-image"
+                    src={unit.image}
+                    alt={`Plano de ${unit.code}`}
+                    loading="lazy"
+                  />
+                ) : (
+                  <BlueprintPlaceholder label={unit.code} variant={unit.blueprint} />
+                )}
+
                 <div className="unit-types__card-copy">
                   <h3>{unit.code}</h3>
                   <p>{unit.description}</p>
