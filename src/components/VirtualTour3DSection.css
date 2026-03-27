@@ -1,0 +1,113 @@
+.virtual-tour {
+  background:
+    linear-gradient(180deg, #f9f6f0 0%, #efe8db 100%),
+    radial-gradient(circle at 76% 28%, rgba(178, 136, 68, 0.2), transparent 42%);
+}
+
+.virtual-tour__layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.virtual-tour__content {
+  display: grid;
+  align-content: start;
+}
+
+.virtual-tour__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.62rem;
+}
+
+.virtual-tour__list li {
+  position: relative;
+  padding-left: 1.05rem;
+  color: #4d5973;
+  line-height: 1.52;
+}
+
+.virtual-tour__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.58rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-gold-strong);
+}
+
+.virtual-tour__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.virtual-tour__embed {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(17, 24, 42, 0.16);
+  overflow: hidden;
+  min-height: 380px;
+  background: #111827;
+  box-shadow: var(--shadow-soft);
+}
+
+.virtual-tour__embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  min-height: 380px;
+}
+
+.virtual-tour__placeholder {
+  width: 100%;
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: end;
+}
+
+.virtual-tour__placeholder-copy {
+  padding: 1.2rem;
+  background: linear-gradient(180deg, rgba(10, 17, 29, 0.05) 0%, rgba(10, 17, 29, 0.85) 100%);
+  color: #eff3fb;
+}
+
+.virtual-tour__placeholder-copy strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: 1.12rem;
+}
+
+.virtual-tour__placeholder-copy p {
+  margin: 0;
+  color: rgba(238, 243, 251, 0.92);
+  line-height: 1.45;
+}
+
+.virtual-tour__placeholder-copy code {
+  color: #f0d5a5;
+}
+
+@media (max-width: 960px) {
+  .virtual-tour__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .virtual-tour__ctas {
+    display: grid;
+  }
+
+  .virtual-tour__ctas .btn {
+    text-align: center;
+  }
+}

@@ -1,0 +1,170 @@
+.amenities {
+  background:
+    linear-gradient(170deg, rgba(10, 18, 30, 0.96) 0%, rgba(12, 18, 30, 0.92) 100%),
+    url("/images/alameda-central-night-2.jpg") center/cover;
+  color: var(--text-light);
+}
+
+.amenities__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.amenities__card {
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.amenities__card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(206, 173, 115, 0.52);
+  box-shadow: 0 18px 34px rgba(4, 8, 16, 0.4);
+}
+
+.amenities__media {
+  margin: 0;
+  min-height: 170px;
+}
+
+.amenities__media img,
+.amenities__concept {
+  width: 100%;
+  height: 100%;
+  min-height: 170px;
+  object-fit: cover;
+}
+
+.amenities__concept {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.88);
+  overflow: hidden;
+}
+
+.amenities__concept::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.2), transparent 45%),
+    radial-gradient(circle at 78% 72%, rgba(200, 166, 107, 0.33), transparent 42%);
+  mix-blend-mode: screen;
+}
+
+.amenities__concept span {
+  position: relative;
+  z-index: 1;
+  background: rgba(10, 16, 26, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+}
+
+.amenities__concept--pool {
+  background:
+    linear-gradient(150deg, #18496b 0%, #0f2f4d 55%, #081c31 100%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(146, 214, 255, 0.16) 0,
+      rgba(146, 214, 255, 0.16) 1px,
+      transparent 1px,
+      transparent 18px
+    );
+}
+
+.amenities__concept--gym {
+  background:
+    linear-gradient(150deg, #33271d 0%, #1f1916 56%, #121214 100%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.12) 0,
+      rgba(255, 255, 255, 0.12) 2px,
+      transparent 2px,
+      transparent 16px
+    );
+}
+
+.amenities__concept--coworking {
+  background:
+    linear-gradient(150deg, #553f2f 0%, #3e2f25 55%, #25201e 100%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 210, 151, 0.12) 0,
+      rgba(255, 210, 151, 0.12) 2px,
+      transparent 2px,
+      transparent 22px
+    );
+}
+
+.amenities__copy {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
+  min-height: 280px;
+}
+
+.amenities__copy h3 {
+  margin: 0;
+  font-size: 1.07rem;
+  line-height: 1.3;
+}
+
+.amenities__copy p {
+  margin: 0;
+  color: rgba(233, 239, 248, 0.88);
+  line-height: 1.55;
+}
+
+.amenities__finish {
+  margin-top: 0.2rem;
+  border: 1px solid rgba(203, 171, 114, 0.35);
+  border-radius: 12px;
+  background: rgba(17, 24, 39, 0.34);
+  padding: 0.7rem;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.amenities__finish strong {
+  font-size: 0.73rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #e4c88e;
+}
+
+.amenities__finish span {
+  color: rgba(238, 244, 253, 0.94);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.amenities__copy .btn {
+  margin-top: auto;
+  align-self: flex-start;
+  color: #f4f6fb;
+  border-color: rgba(255, 255, 255, 0.3);
+  line-height: 1.2;
+}
+
+@media (max-width: 1140px) {
+  .amenities__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .amenities__grid {
+    grid-template-columns: 1fr;
+  }
+}

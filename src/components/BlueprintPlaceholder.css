@@ -1,0 +1,56 @@
+.blueprint {
+  position: relative;
+  border-radius: 14px;
+  padding: 0.7rem;
+  min-height: 180px;
+  border: 1px solid rgba(200, 166, 107, 0.28);
+  background:
+    linear-gradient(145deg, rgba(12, 20, 34, 0.95) 0%, rgba(12, 20, 34, 0.88) 100%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(200, 166, 107, 0.06) 0,
+      rgba(200, 166, 107, 0.06) 1px,
+      transparent 1px,
+      transparent 13px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(200, 166, 107, 0.06) 0,
+      rgba(200, 166, 107, 0.06) 1px,
+      transparent 1px,
+      transparent 13px
+    );
+  overflow: hidden;
+}
+
+.blueprint::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.blueprint__tag {
+  position: absolute;
+  top: 0.68rem;
+  left: 0.68rem;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(237, 222, 193, 0.86);
+}
+
+.blueprint svg {
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  stroke: rgba(241, 223, 192, 0.95);
+  stroke-width: 1.3;
+  vector-effect: non-scaling-stroke;
+}
+
+.blueprint svg rect {
+  stroke-width: 1.25;
+}

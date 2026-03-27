@@ -1,0 +1,138 @@
+.tour {
+  background:
+    linear-gradient(180deg, rgba(9, 15, 25, 0.95) 0%, rgba(10, 14, 22, 0.96) 100%),
+    url("/images/buildings-night.jpg") center/cover;
+  color: #fff;
+}
+
+.tour__layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 0.9rem;
+}
+
+.tour__video-frame,
+.tour__slider {
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+
+.tour__video-frame iframe {
+  border: 0;
+  width: 100%;
+  min-height: 385px;
+}
+
+.tour__video-placeholder {
+  min-height: 385px;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: end;
+}
+
+.tour__video-copy {
+  background: linear-gradient(180deg, rgba(10, 14, 23, 0.05) 0%, rgba(10, 14, 23, 0.8) 100%);
+  padding: 1.2rem;
+}
+
+.tour__video-copy strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.tour__video-copy p {
+  margin: 0;
+  color: rgba(229, 237, 248, 0.88);
+  line-height: 1.5;
+}
+
+.tour__video-copy code {
+  color: #f3d7a3;
+}
+
+.tour__slider {
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.tour__slider figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 235px auto;
+  flex: 1;
+}
+
+.tour__slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tour__slider figcaption {
+  padding: 1.1rem;
+}
+
+.tour__slider h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.tour__slider p {
+  margin: 0.55rem 0 0;
+  color: rgba(229, 237, 248, 0.88);
+  line-height: 1.55;
+}
+
+.tour__slider-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.tour__slider-actions button {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  padding: 0.92rem;
+  cursor: pointer;
+}
+
+.tour__slider-actions button:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.tour__slider-actions button:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tour__ctas {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.72rem;
+}
+
+.tour .btn-ghost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 980px) {
+  .tour__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .tour__slider figure {
+    grid-template-rows: 210px auto;
+  }
+
+  .tour__ctas {
+    display: grid;
+  }
+}

@@ -1,0 +1,99 @@
+.footer {
+  background: #0b1321;
+  color: rgba(235, 241, 252, 0.9);
+  padding: 2.6rem 0 6.9rem;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.3fr 0.85fr 0.85fr;
+  gap: 1rem;
+}
+
+.footer__name {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer__brand p {
+  margin: 0.5rem 0 0;
+  line-height: 1.45;
+}
+
+.footer__brand a {
+  color: rgba(235, 241, 252, 0.95);
+}
+
+.footer__wa-btn {
+  margin-top: 0.9rem;
+  display: inline-block;
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer__links,
+.footer__social {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+}
+
+.footer__links a {
+  color: rgba(233, 240, 250, 0.84);
+}
+
+.footer__links a:hover {
+  color: #fff;
+}
+
+.footer__social-items {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.footer__social-items a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.footer__bottom {
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__bottom p {
+  margin: 0;
+  color: rgba(233, 240, 250, 0.78);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 920px) {
+  .footer {
+    padding-bottom: 9rem;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+}

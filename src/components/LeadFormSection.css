@@ -1,0 +1,111 @@
+.lead-form {
+  background:
+    linear-gradient(180deg, #f6f2ea 0%, #efe8dc 100%),
+    radial-gradient(circle at 78% 12%, rgba(200, 166, 107, 0.14), transparent 38%);
+}
+
+.lead-form__layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.2fr;
+  gap: 1rem;
+}
+
+.lead-form__contact-card {
+  margin-top: 1.4rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-soft);
+  background: rgba(255, 255, 255, 0.72);
+  padding: 1rem;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 0.45rem;
+}
+
+.lead-form__contact-card h3 {
+  margin: 0;
+  font-size: 1.06rem;
+}
+
+.lead-form__contact-card p {
+  margin: 0.2rem 0;
+}
+
+.lead-form__contact-card a {
+  color: #1d2944;
+}
+
+.lead-form__contact-card a:hover {
+  color: var(--accent-gold-strong);
+}
+
+.lead-form__form {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-soft);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(1rem, 2vw, 1.45rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.82rem;
+}
+
+.lead-form__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: 500;
+  color: #202a41;
+}
+
+.lead-form__form input,
+.lead-form__form select,
+.lead-form__form textarea {
+  border: 1px solid rgba(17, 24, 42, 0.2);
+  border-radius: 12px;
+  padding: 0.75rem 0.82rem;
+  outline: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lead-form__form input:focus,
+.lead-form__form select:focus,
+.lead-form__form textarea:focus {
+  border-color: rgba(178, 135, 69, 0.9);
+  box-shadow: 0 0 0 4px rgba(200, 166, 107, 0.18);
+}
+
+.lead-form__form small {
+  color: #d14747;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.lead-form__full {
+  grid-column: 1 / -1;
+}
+
+.lead-form__submit {
+  width: fit-content;
+}
+
+.lead-form__success {
+  margin: 0;
+  color: #046945;
+  font-weight: 600;
+}
+
+@media (max-width: 940px) {
+  .lead-form__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .lead-form__form {
+    grid-template-columns: 1fr;
+  }
+
+  .lead-form__submit {
+    width: 100%;
+  }
+}

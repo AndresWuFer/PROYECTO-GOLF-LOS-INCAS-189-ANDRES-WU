@@ -1,0 +1,38 @@
+.investment {
+  background:
+    linear-gradient(90deg, rgba(9, 16, 26, 0.96) 0%, rgba(9, 16, 26, 0.88) 45%, rgba(9, 16, 26, 0.75) 100%),
+    url("/images/buildings-day.jpg") center/cover;
+  color: #fff;
+}
+
+.investment__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.investment__points {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.investment__points article {
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.95rem 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.investment__points p {
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(238, 242, 251, 0.93);
+}
+
+@media (max-width: 960px) {
+  .investment__layout {
+    grid-template-columns: 1fr;
+  }
+}
