@@ -360,9 +360,9 @@
     items: [
       {
         code: "Tipología A1",
-        area: "62 m2",
-        bedrooms: "1 dormitorio",
-        bathrooms: "1 baño",
+        area: "180 m2",
+        bedrooms: "3 dormitorio",
+        bathrooms: "3.5 baño",
         description: "Layout eficiente para primeras compras e inversion de renta.",
         
         blueprint: "alpha",
@@ -370,79 +370,79 @@
       },
       {
         code: "Tipología A2",
-        area: "68 m2",
-        bedrooms: "1 dormitorio + estudio",
-        bathrooms: "1 baño",
+        area: "180 m2",
+        bedrooms: "3 dormitorios",
+        bathrooms: "3.5 baños",
         description: "Configuración flexible para home office y estilo de vida urbano.",
         blueprint: "beta",
         image: "/images/tipologia2.png"
       },
       {
         code: "Tipología B1",
-        area: "74 m2",
-        bedrooms: "2 dormitorios",
-        bathrooms: "2 baños",
+        area: "180 m2",
+        bedrooms: "3 dormitorios",
+        bathrooms: "3.5 baños",
         description: "Distribución balanceada para parejas y familias pequeñas.",
         blueprint: "gamma",
         image: "/images/tipologia1.png"
       },
       {
         code: "Tipología B2",
-        area: "78 m2",
-        bedrooms: "2 dormitorios",
-        bathrooms: "2 baños",
-        description: "Planta moderna con excelente aprovechamiento de area social.",
+        area: "180 m2",
+        bedrooms: "3 dormitorios",
+        bathrooms: "3.5 baños",
+        description: "Planta moderna con excelente aprovechamiento de area social." ,
         blueprint: "delta",
         image: "/images/tipologia2.png"
       },
       {
         code: "Tipología B3",
-        area: "83 m2",
-        bedrooms: "2 dormitorios + estar",
-        bathrooms: "2 baños",
+        area: "180 m2",
+        bedrooms: "3 dormitorios",
+        bathrooms: "3.5 baños",
         description: "Ambientes versátiles para dinámicas familiares contemporáneas.",
         blueprint: "epsilon",
         image: "/images/tipologia1.png"
       },
       {
         code: "Tipología C1",
-        area: "88 m2",
+        area: "180 m2",
         bedrooms: "3 dormitorios",
-        bathrooms: "2 baños",
-        description: "Unidad familiar con dormitorios integrados y flujo funcional.",
+        bathrooms: "3.5 baños",
+        description: "Unidad familiar con dormitorios integrados y flujo funcional." ,
         blueprint: "alpha",
         image: "/images/tipologia2.png"
       },
       {
         code: "Tipología C2",
-        area: "92 m2",
+        area: "180 m2",
         bedrooms: "3 dormitorios",
-        bathrooms: "2 baños",
+        bathrooms: "3.5 baños",
         description: "Espacios sociales amplios con perfil ideal para vivienda principal.",
         blueprint: "beta",
         image: "/images/tipologia1.png"
       },
       {
         code: "Tipología C3",
-        area: "98 m2",
+        area: "180 m2",
         bedrooms: "3 dormitorios",
-        bathrooms: "2 baños",
+        bathrooms: "3.5 baños",
         description: "Composición equilibrada con buena separación de zonas privadas.",
         blueprint: "gamma",
         image: "/images/tipologia2.png"
       },
       {
         code: "Tipología D1",
-        area: "104 m2",
+        area: "180 m2",
         bedrooms: "3 dormitorios + estudio",
-        bathrooms: "3 baños",
+        bathrooms: "3.5 baños",
         description: "Formato premium para familias que valoran amplitud y flexibilidad.",
         blueprint: "delta",
         image: "/images/tipologia1.png"
       },
       {
         code: "Tipología D2",
-        area: "110 m2",
+        area: "180 m2",
         bedrooms: "3 dormitorios + estar",
         bathrooms: "3 baños",
         description: "Planta de alto confort para residencia permanente.",
@@ -451,7 +451,7 @@
       },
       {
         code: "Tipología E1",
-        area: "118 m2",
+        area: "180 m2",
         bedrooms: "3 dormitorios + servicio",
         bathrooms: "3 baños",
         description: "Propuesta orientada a familias que priorizan funcionalidad superior.",
@@ -460,7 +460,7 @@
       },
       {
         code: "Tipología E2",
-        area: "126 m2",
+        area: "180 m2",
         bedrooms: "4 dormitorios",
         bathrooms: "3 baños",
         description: "Unidad amplia para grupos familiares de mayor tamaño.",
@@ -469,7 +469,7 @@
       },
       {
         code: "Tipología F1",
-        area: "134 m2",
+        area: "180 m2",
         bedrooms: "4 dormitorios + estar",
         bathrooms: "3 baños",
         description: "Tipologia de alta demanda para vivir con comodidad premium.",
@@ -478,7 +478,7 @@
       },
       {
         code: "Tipología F2",
-        area: "142 m2",
+        area: "180 m2",
         bedrooms: "4 dormitorios + estudio",
         bathrooms: "4 baños",
         description: "Espacios de gran formato para familias consolidadas.",
@@ -487,7 +487,7 @@
       },
       {
         code: "Tipología G1",
-        area: "156 m2",
+        area: "180 m2",
         bedrooms: "4 dormitorios + sala familiar",
         bathrooms: "4 baños",
         description: "Unidad insignia para quienes buscan amplitud y valor patrimonial.",
